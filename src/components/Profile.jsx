@@ -1,6 +1,9 @@
+import './Profile.module.css';
+import s from './Profile.module.css';
+
 const Profile = () => {
     return (
-        <div className='content'>
+        <div className={s.content}>
             <div>
                 <img
                     src='https://media.istockphoto.com/id/1253837586/photo/blurred-blue-sky-and-sea-with-bokeh-light.jpg?s=612x612&w=0&k=20&c=nQm3RRAuk-5ue7AXbw6liaCSVZRcA4OQx3AUjPFG9_8='/>
@@ -14,11 +17,13 @@ const Profile = () => {
                 <div>
                     New post
                 </div>
-                <div>
-                    post 1
-                </div>
-                <div>
-                    post 2
+                <div className={s.posts}>
+                    <div className={s.item}>
+                        post 1
+                    </div>
+                    <div className={s.item}>
+                        post 2
+                    </div>
                 </div>
 
             </div>
