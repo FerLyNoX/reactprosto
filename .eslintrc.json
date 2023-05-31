@@ -1,0 +1,21 @@
+{
+  "extends": ["react-app", "plugin:jsx-a11y/recommended", "airbnb", "airbnb/hooks"],
+  "plugins": ["jsx-a11y", "react-hooks"],
+  "rules": {
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+
+    //    "react-hooks/exhaustive-deps": [
+    //      "error",
+    //      {
+    //        "enableDangerousAutofixThisMayCauseInfiniteLoops": true
+    //      }
+    //    ],
+    "linebreak-style": "off",
+    "react/jsx-filename-extension": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/react-in-jsx-scope": "off",
+    "import/prefer-default-export": "off",
+    "import/no-cycle": "off"
+  }
+}
