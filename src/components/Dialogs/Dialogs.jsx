@@ -1,7 +1,7 @@
 import s from './Dialogs.module.css';
 import DialogItem from './DialogItem/DialogItem';
 import Message from './Message/Message';
-import { messages } from '../../Data/messages';
+import { messages } from '../../Redux/messages';
 
 function Dialogs({ dialogs }) {
   const dialogsElements = dialogs.map((d) => <DialogItem name={d.name} id={d.id} />);

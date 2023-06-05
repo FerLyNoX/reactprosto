@@ -4,9 +4,9 @@ import Header from './components/Header/Header';
 import Navbar from './components/Navbar/Navbar';
 import Profile from './components/Profile/Profile';
 import Dialogs from './components/Dialogs/Dialogs';
-import { dialogs } from './Data/dialogs';
-import { posts } from './Data/posts';
-import { messages } from "./Data/messages";
+import { dialogs } from './Redux/dialogs';
+import { posts } from './Redux/posts';
+import { messages } from "./Redux/messages";
 
 function App() {
   return (
