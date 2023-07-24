@@ -5,7 +5,7 @@ import Navbar from './components/Navbar/Navbar';
 import Profile from './components/Profile/Profile';
 import Dialogs from './components/Dialogs/Dialogs';
 import { dialogs } from './Redux/dialogs';
-import { posts } from './Redux/posts';
+import {addPost, posts} from './Redux/posts';
 import { messages } from "./Redux/messages";
 
 function App() {
@@ -18,7 +18,9 @@ function App() {
           <Routes>
             <Route path="/dialogs" element={<Dialogs dialogs={dialogs} />} />
             <Route path="/dialogs/:dialogId" element={<Dialogs dialogs={dialogs} messages={messages} />} />
-            <Route path="/profile" element={<Profile posts={posts} />} />
+            <Route path="/profile" element={<Profile
+                posts={posts}
+                addPost={addPost} />} />
           </Routes>
         </div>
       </div>

@@ -3,11 +3,14 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {posts} from "./Redux/posts";
+import {dialogs} from "./Redux/dialogs";
+import {messages} from "./Redux/messages";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <App dialogs={dialogs} messages={messages} posts={posts}/>
   </React.StrictMode>,
 );
 

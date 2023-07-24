@@ -1,6 +1,6 @@
 import s from './Post.module.css';
 
-function Post(props) {
+function Post (props) {
   return (
     <div className={s.item}>
       <img
